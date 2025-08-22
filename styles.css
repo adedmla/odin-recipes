@@ -1,18 +1,18 @@
 * {
   margin: 0;
+  padding: 0;
 }
 
 .section {
   height: 100vh;
-  width: 60%;
+  width: 70%;
   display: flex;
-  background-color: whitesmoke;
   flex-direction: column;
   text-align: center;
   margin: 0 auto;
 }
 
-p {
+.site-description {
   padding: 20px;
 }
 body {
@@ -22,13 +22,27 @@ body {
 .container {
   display: flex;
   justify-content: space-evenly;
+  place-items: center;
 }
 
-img {
+.landing-page-food {
   width: 200px;
   height: 150px;
   object-fit: cover;
   border-radius: 15px;
+  margin: 20px 0px;
+}
+
+button {
+  padding: 10px 20px;
+  border-style: solid;
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+
+button:active {
+  opacity: 0.7;
+  transform: scale(0.95);
 }
 
 .food-card {
@@ -36,4 +50,71 @@ img {
   height: 150px;
   display: flex;
   flex-direction: column;
+}
+
+.generic-card {
+  background-color: whitesmoke;
+  width: 300px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.macros-card {
+  padding: 16px;
+  background-color: white;
+  width: 240px;
+  height: 175px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.card-img {
+  width: 30%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-info {
+  font-weight: normal;
+  margin: 0 0 0 0;
+  font-size: 12px;
+}
+
+.card-info h3 {
+  font-size: 12px;
+}
+
+.cals-time span {
+  margin-right: 15px;
+}
+
+.nutrition-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 12px;
+}
+
+.nutrition-facts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 0;
+}
+
+.divider-line {
+  width: 90%;
+  height: 1px;
+  background-color: #ddd;
+  margin: 8px 0 12px 0;
 }
